@@ -34,7 +34,7 @@ export const services: Service[] = [
     description:
       "Comprehensive ten-substance urine drug test adding benzodiazepines, barbiturates, methadone, propoxyphene, and methaqualone to the standard 5-panel.",
     turnaround: "24–48 hours",
-    price: "$75",
+    price: "$65",
     icon: TestTubeDiagonal,
   },
   {
