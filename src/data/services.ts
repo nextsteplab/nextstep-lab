@@ -21,7 +21,7 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "5-panel",
-    title: "5 Panel Drug Screen",
+    title: "Rapid 5 Panel Drug Screen",
     description:
       "Standard five-substance urine drug test covering marijuana, cocaine, opiates, amphetamines, and PCP. Ideal for pre-employment and routine screening.",
     turnaround: "24–48 hours",
