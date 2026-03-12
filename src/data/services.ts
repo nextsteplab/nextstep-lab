@@ -21,7 +21,7 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "5-panel",
-    title: "5 Panel Drug Screen",
+    title: "Rapid 5 Panel Drug Screen",
     description:
       "Standard five-substance urine drug test covering marijuana, cocaine, opiates, amphetamines, and PCP. Ideal for pre-employment and routine screening.",
     turnaround: "24–48 hours",
@@ -30,11 +30,11 @@ export const services: Service[] = [
   },
   {
     id: "10-panel",
-    title: "10 Panel Drug Screen",
+    title: "Rapoid 10 Panel Drug Screen",
     description:
       "Comprehensive ten-substance urine drug test adding benzodiazepines, barbiturates, methadone, propoxyphene, and methaqualone to the standard 5-panel.",
     turnaround: "24–48 hours",
-    price: "$75",
+    price: "$65",
     icon: TestTubeDiagonal,
   },
   {

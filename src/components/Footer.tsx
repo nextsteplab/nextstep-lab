@@ -42,15 +42,15 @@ const Footer = () =>
         <ul className="space-y-3 text-sm text-secondary-foreground/70">
           <li className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-gold" />
-            (806) 555-0199
+            (806) 304-3424
           </li>
           <li className="flex items-center gap-2">
             <Mail className="h-4 w-4 text-gold" />
-            info@nextsteplab.com
+            info@nextsteplab.org
           </li>
           <li className="flex items-center gap-2">
             <MapPin className="h-4 w-4 text-gold" />
-            Lubbock, Texas
+            Wherever you are!
           </li>
         </ul>
         {/* Social placeholders */}
