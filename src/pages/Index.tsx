@@ -17,8 +17,8 @@ const Index = () =>
     <section className="bg-hero text-hero-foreground">
       <div className="container py-20 md:py-28 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-extrabold leading-tight animate-fade-in-up max-w-3xl mx-auto">
-          Reliable Lab & DNA Testing in{" "}
-          <span className="text-gold">​</span>
+          Reliable Lab & DNA Testing{"\n"}
+          Mobile <span className="text-gold">​</span>
         </h1>
         <p className="mt-5 text-lg md:text-xl text-hero-foreground/70 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
           Fast, confidential screening and testing services for individuals,
