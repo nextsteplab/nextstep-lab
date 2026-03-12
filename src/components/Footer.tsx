@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { FlaskConical, Phone, Mail, MapPin } from "lucide-react";
 
-const Footer = () => (
-  <footer className="bg-secondary text-secondary-foreground">
+const Footer = () =>
+<footer className="bg-secondary text-secondary-foreground">
     <div className="container py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
       {/* Brand */}
       <div>
@@ -11,7 +11,7 @@ const Footer = () => (
           <span className="font-heading font-bold text-lg">NextStep Lab</span>
         </div>
         <p className="text-sm text-secondary-foreground/70 leading-relaxed">
-          Fast, confidential, and professional lab testing and screening services in Lubbock, Texas.
+          Fast, confidential, and professional lab testing and screening services in Lubbock, Texas and surrounding areas.  
         </p>
       </div>
 
@@ -20,19 +20,19 @@ const Footer = () => (
         <h4 className="font-heading font-semibold mb-4 text-gold text-sm uppercase tracking-wider">Quick Links</h4>
         <ul className="space-y-2 text-sm">
           {[
-            { label: "Home", to: "/" },
-            { label: "Services", to: "/services" },
-            { label: "Pricing", to: "/pricing" },
-            { label: "Schedule a Test", to: "/schedule" },
-            { label: "About Us", to: "/about" },
-            { label: "Contact", to: "/contact" },
-          ].map((link) => (
-            <li key={link.to}>
+        { label: "Home", to: "/" },
+        { label: "Services", to: "/services" },
+        { label: "Pricing", to: "/pricing" },
+        { label: "Schedule a Test", to: "/schedule" },
+        { label: "About Us", to: "/about" },
+        { label: "Contact", to: "/contact" }].
+        map((link) =>
+        <li key={link.to}>
               <Link to={link.to} className="text-secondary-foreground/70 hover:text-gold transition-colors">
                 {link.label}
               </Link>
             </li>
-          ))}
+        )}
         </ul>
       </div>
 
@@ -55,14 +55,14 @@ const Footer = () => (
         </ul>
         {/* Social placeholders */}
         <div className="flex gap-3 mt-4">
-          {["Facebook", "Instagram", "LinkedIn"].map((s) => (
-            <span
-              key={s}
-              className="text-xs border border-secondary-foreground/20 rounded px-2 py-1 text-secondary-foreground/50 hover:border-gold hover:text-gold transition-colors cursor-pointer"
-            >
+          {["Facebook", "Instagram", "LinkedIn"].map((s) =>
+        <span
+          key={s}
+          className="text-xs border border-secondary-foreground/20 rounded px-2 py-1 text-secondary-foreground/50 hover:border-gold hover:text-gold transition-colors cursor-pointer">
+          
               {s}
             </span>
-          ))}
+        )}
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@ const Footer = () => (
         © {new Date().getFullYear()} NextStep Lab & Screening Services LLC. All rights reserved.
       </div>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;
