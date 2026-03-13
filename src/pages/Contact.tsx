@@ -48,7 +48,7 @@ const Contact = () => {
                   <p>Thu: 8:00 AM – 7:00 PM</p>
                   <p>Fri: 8:00 AM – 7:00 PM</p>
                   <p>Sat: By Appointment</p>
-                  <p>Sun: Closed</p>
+                  <p>Sun: By Appointment</p>
                   <p className="mt-2 text-primary font-semibold">After Hours & House Calls Available</p>
                 </div>
               </div>
@@ -57,20 +57,20 @@ const Contact = () => {
 
           {/* Form */}
           <div>
-            {submitted ? (
-              <div className="text-center animate-fade-in-up py-12">
+            {submitted ?
+            <div className="text-center animate-fade-in-up py-12">
                 <CheckCircle className="h-14 w-14 text-gold mx-auto mb-3" />
                 <h3 className="text-xl font-heading font-bold mb-2">Message Sent!</h3>
                 <p className="text-muted-foreground">We'll get back to you shortly.</p>
-              </div>
-            ) : (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-                className="space-y-4"
-              >
+              </div> :
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setSubmitted(true);
+              }}
+              className="space-y-4">
+              
                 <Input required placeholder="Your Name" className="focus:border-gold focus:ring-gold" />
                 <Input required type="email" placeholder="Email Address" className="focus:border-gold focus:ring-gold" />
                 <Input type="tel" placeholder="Phone Number (optional)" className="focus:border-gold focus:ring-gold" />
@@ -79,12 +79,12 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
-            )}
+            }
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Contact;
