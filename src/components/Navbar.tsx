@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-secondary border-b border-secondary/80 shadow-sm">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <FlaskConical className="h-7 w-7 text-secondary-foreground" />
+          <FlaskConical className="h-7 w-7 text-destructive-foreground" />
           <span className="font-heading font-bold tracking-tight text-xs text-primary-foreground">
             NextStep Lab & Screening Services LLC           
           </span>
