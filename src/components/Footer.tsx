@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
-import logoImg from "@/assets/logo.png";
+import { Phone, Mail, MapPin, FlaskConical } from "lucide-react";
 
 const Footer = () =>
 <footer className="bg-secondary text-secondary-foreground">
