@@ -3,6 +3,7 @@ import { ShieldCheck, Award, Target, Users } from "lucide-react";
 
 const values = [
   { icon: ShieldCheck, title: "HIPAA Compliant", desc: "Every test follows strict privacy and compliance protocols." },
+  { icon: Award, title: "CLIA Certified", desc: "Our lab meets the highest federal standards for quality and reliability." },
   { icon: Award, title: "Certified Results", desc: "Lab-certified, legally admissible results you can trust." },
   { icon: Target, title: "Accuracy First", desc: "We use the latest equipment and methodologies for precise outcomes." },
   { icon: Users, title: "Community Focused", desc: "Proudly serving Lubbock and the surrounding West Texas region." },
