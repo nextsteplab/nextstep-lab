@@ -20,10 +20,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-secondary border-b border-secondary/80 shadow-sm">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <FlaskConical className="h-7 w-7 text-primary" />
-          <span className="font-heading font-bold text-lg text-secondary-foreground tracking-tight">
-            NextStep Lab & Screening Services LLC      
-          </span>
+          <img src={logo} alt="NextStep Lab & Screening Services" className="h-10" />
         </Link>
 
         {/* Desktop nav */}
