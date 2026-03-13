@@ -13,7 +13,7 @@ const Contact = () => {
       <section className="bg-hero text-hero-foreground py-14">
         <div className="container text-center">
           <h1 className="text-3xl md:text-4xl font-heading font-extrabold">
-            Contact <span className="text-gold">Us</span>
+            Contact <span className="text-primary">Us</span>
           </h1>
           <p className="mt-3 text-hero-foreground/70 max-w-xl mx-auto">
             Have questions? We're here to help. Reach out today.
