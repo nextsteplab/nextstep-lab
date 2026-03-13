@@ -33,7 +33,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-gold" />
-                <span>info@nextsteplab.com</span>
+                <span>info@nextsteplab.org</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-gold" />
