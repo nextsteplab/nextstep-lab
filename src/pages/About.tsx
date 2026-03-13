@@ -27,6 +27,9 @@ const About = () => (
         <p className="text-muted-foreground leading-relaxed mb-4">
           NextStep Lab & Screening Services LLC was founded with one goal: to provide the Lubbock, Texas community with fast, confidential, and accurate laboratory testing. Whether you need a pre-employment drug screen, a court-ordered DNA test, or a DOT-compliant alcohol test, we deliver professional results with the care and discretion you deserve.
         </p>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          We are a fully mobile service — we come to your home, place of business, or wherever fits your needs. No need to drive across town or wait in a lobby. We bring the lab to you.
+        </p>
         <p className="text-muted-foreground leading-relaxed">
           We serve individuals, employers, schools, legal professionals, and organizations across West Texas. Our team is committed to upholding the highest standards of accuracy, compliance, and customer service.
         </p>
