@@ -13,7 +13,7 @@ const Contact = () => {
       <section className="bg-hero text-hero-foreground py-14">
         <div className="container text-center">
           <h1 className="text-3xl md:text-4xl font-heading font-extrabold">
-            Contact <span className="text-gold">Us</span>
+            Contact <span className="text-primary">Us</span>
           </h1>
           <p className="mt-3 text-hero-foreground/70 max-w-xl mx-auto">
             Have questions? We're here to help. Reach out today.
@@ -29,21 +29,25 @@ const Contact = () => {
             <div className="space-y-4 text-sm">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-gold" />
-                <span>(806) 555-0199</span>
+                <span>(806) 304-3424</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-gold" />
-                <span>info@nextsteplab.com</span>
+                <span>info@nextsteplab.org</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-gold" />
-                <span>Lubbock, Texas</span>
+                <span>Wherever you are!</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-gold" />
-                <div>
-                  <p>Mon–Fri: 8:00 AM – 5:00 PM</p>
-                  <p>Sat: 9:00 AM – 1:00 PM</p>
+              <div className="text-sm">
+                  <p>Mon: 8:00 AM – 7:00 PM</p>
+                  <p>Tue: 8:00 AM – 7:00 PM</p>
+                  <p>Wed: 8:00 AM – 7:00 PM</p>
+                  <p>Thu: 8:00 AM – 7:00 PM</p>
+                  <p>Fri: 8:00 AM – 7:00 PM</p>
+                  <p>Sat: By Appointment</p>
                   <p>Sun: Closed</p>
                 </div>
               </div>

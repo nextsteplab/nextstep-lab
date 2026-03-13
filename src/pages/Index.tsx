@@ -36,14 +36,14 @@ const Index = () =>
     </section>
 
     {/* Trust Badges */}
-    <section className="border-b border-border">
+    <section className="border-b border-primary/20 bg-primary/5">
       <div className="container py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
         {trustBadges.map((badge) =>
       <div
         key={badge.label}
         className="flex items-center gap-3 justify-center animate-fade-in-up animation-delay-200">
         
-            <badge.icon className="h-6 w-6 text-gold" />
+            <badge.icon className="h-6 w-6 text-primary" />
             <span className="text-sm font-heading font-semibold text-foreground">
               {badge.label}
             </span>
@@ -56,7 +56,7 @@ const Index = () =>
     <section className="py-16 md:py-24">
       <div className="container">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-12">
-          Our <span className="text-gold">Services</span>
+          Our <span className="text-primary">Services</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.slice(0, 8).map((service, i) =>
@@ -89,7 +89,7 @@ const Index = () =>
     <section className="bg-hero text-hero-foreground">
       <div className="container py-14 text-center">
         <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-          Ready to Get <span className="text-gold">Tested</span>?{"\n"}
+          Ready to Get <span className="text-primary">Tested</span>?{"\n"}
         </h2>
         <p className="text-hero-foreground/70 mb-6 max-w-xl mx-auto">
           Book your appointment online in minutes. 
