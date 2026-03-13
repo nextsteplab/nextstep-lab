@@ -36,14 +36,14 @@ const Index = () =>
     </section>
 
     {/* Trust Badges */}
-    <section className="border-b border-border">
+    <section className="border-b border-primary/20 bg-primary/5">
       <div className="container py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
         {trustBadges.map((badge) =>
       <div
         key={badge.label}
         className="flex items-center gap-3 justify-center animate-fade-in-up animation-delay-200">
         
-            <badge.icon className="h-6 w-6 text-gold" />
+            <badge.icon className="h-6 w-6 text-primary" />
             <span className="text-sm font-heading font-semibold text-foreground">
               {badge.label}
             </span>
