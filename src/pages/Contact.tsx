@@ -49,6 +49,7 @@ const Contact = () => {
                   <p>Fri: 8:00 AM – 7:00 PM</p>
                   <p>Sat: By Appointment</p>
                   <p>Sun: Closed</p>
+                  <p className="mt-2 text-primary font-semibold">After Hours & House Calls Available</p>
                 </div>
               </div>
             </div>
