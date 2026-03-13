@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <FlaskConical className="h-7 w-7 text-primary" />
           <span className="font-heading font-bold text-lg text-secondary-foreground tracking-tight">
-            NextStep Lab & Screening Services  LLC      
+            NextStep Lab & Drug Testing Services LLC      
           </span>
         </Link>
 
