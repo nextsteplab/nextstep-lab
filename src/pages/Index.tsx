@@ -89,7 +89,7 @@ const Index = () =>
     <section className="bg-hero text-hero-foreground">
       <div className="container py-14 text-center">
         <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-          Ready to Get <span className="text-gold">Tested</span>?{"\n"}
+          Ready to Get <span className="text-primary">Tested</span>?{"\n"}
         </h2>
         <p className="text-hero-foreground/70 mb-6 max-w-xl mx-auto">
           Book your appointment online in minutes. 
