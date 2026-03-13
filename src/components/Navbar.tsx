@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-secondary border-b border-secondary/80 shadow-sm">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="NextStep Lab & Screening Services" className="h-10" />
+          <img src={logo} alt="NextStep Lab & Screening Services" className="h-14 mix-blend-multiply" />
         </Link>
 
         {/* Desktop nav */}
