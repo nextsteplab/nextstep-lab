@@ -18,4 +18,20 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Default client build settings; SSR build uses CLI --ssr flag
+  },
+  ssr: {
+    // Externalize node built-ins for SSR
+    noExternal: [
+      "lucide-react",
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "@radix-ui/react-tooltip",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-slot",
+    ],
+  },
 }));
