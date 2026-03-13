@@ -7,7 +7,8 @@ const Footer = () =>
       {/* Brand */}
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <img src={logoImg} alt="NextStep Lab" className="h-10" />
+          <FlaskConical className="h-7 w-7 text-gold" />
+          <span className="font-heading font-bold text-lg">NextStep Lab</span>
         </div>
         <p className="text-sm text-secondary-foreground/70 leading-relaxed">
           Fast, confidential, and professional lab testing and screening services in Lubbock, Texas and surrounding areas.  
