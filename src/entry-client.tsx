@@ -1,14 +1,13 @@
+import { createRoot } from "react-dom/client";
 import { hydrateRoot } from "react-dom/client";
-import App from "./App";
+import App from "./App.tsx";
 import "./index.css";
 
 const rootElement = document.getElementById("root")!;
 
-// If the page was pre-rendered (has child nodes), hydrate; otherwise do a full render
+// If pre-rendered HTML exists, hydrate it; otherwise do a fresh render
 if (rootElement.hasChildNodes()) {
   hydrateRoot(rootElement, <App />);
 } else {
-  import("react-dom/client").then(({ createRoot }) => {
-    createRoot(rootElement).render(<App />);
-  });
+  createRoot(rootElement).render(<App />);
 }
