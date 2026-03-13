@@ -41,9 +41,13 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-gold" />
-                <div>
-                  <p>Mon–Fri: 8:00 AM – 5:00 PM</p>
-                  <p>Sat: 9:00 AM – 1:00 PM</p>
+              <div className="text-sm">
+                  <p>Mon: 8:00 AM – 7:00 PM</p>
+                  <p>Tue: 8:00 AM – 7:00 PM</p>
+                  <p>Wed: 8:00 AM – 7:00 PM</p>
+                  <p>Thu: 8:00 AM – 7:00 PM</p>
+                  <p>Fri: 8:00 AM – 7:00 PM</p>
+                  <p>Sat: By Appointment</p>
                   <p>Sun: Closed</p>
                 </div>
               </div>
