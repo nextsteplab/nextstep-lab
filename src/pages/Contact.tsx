@@ -37,7 +37,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-gold" />
-                <span>Lubbock, Texas</span>
+                <span>Wherever you are!</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-gold" />
