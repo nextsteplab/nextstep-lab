@@ -56,7 +56,7 @@ const Index = () =>
     <section className="py-16 md:py-24">
       <div className="container">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-12">
-          Our <span className="text-gold">Services</span>
+          Our <span className="text-primary">Services</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.slice(0, 8).map((service, i) =>
