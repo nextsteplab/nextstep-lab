@@ -61,7 +61,11 @@ const Schedule = () => {
                   {services.map((s) => (
                     <option key={s.id} value={s.id}>{s.title}</option>
                   ))}
-                </select>
+              </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-1">Testing Location</label>
+                <Input required placeholder="Enter address or location for service" className="focus:border-gold focus:ring-gold" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
