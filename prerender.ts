@@ -20,7 +20,7 @@ const routesToPrerender = [
 
 async function prerender() {
   // Read the generated index.html template from the client build
-  const templatePath = path.resolve(__dirname, "dist/client/index.html");
+  const templatePath = path.resolve(__dirname, "dist/index.html");
   const template = fs.readFileSync(templatePath, "utf-8");
 
   // Import the server entry
@@ -40,8 +40,8 @@ async function prerender() {
     // Determine output path
     const filePath =
       url === "/"
-        ? path.resolve(__dirname, "dist/client/index.html")
-        : path.resolve(__dirname, `dist/client${url}/index.html`);
+        ? path.resolve(__dirname, "dist/index.html")
+        : path.resolve(__dirname, `dist${url}/index.html`);
 
     // Ensure directory exists
     const dir = path.dirname(filePath);
