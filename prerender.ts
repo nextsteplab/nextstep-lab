@@ -40,8 +40,8 @@ async function prerender() {
     // Determine output path
     const filePath =
       url === "/"
-        ? path.resolve(__dirname, "dist/client/index.html")
-        : path.resolve(__dirname, `dist/client${url}/index.html`);
+        ? path.resolve(__dirname, "dist/index.html")
+        : path.resolve(__dirname, `dist${url}/index.html`);
 
     // Ensure directory exists
     const dir = path.dirname(filePath);
