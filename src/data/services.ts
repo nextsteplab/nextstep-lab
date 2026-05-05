@@ -99,6 +99,17 @@ export const services: Service[] = [
     icon: ShieldCheck,
   },
   {
+    id: "dot-urine",
+    title: "DOT - Urine Drug Screen",
+    description:
+      "DOT-regulated urine drug screen performed on-site with proper chain-of-custody documentation. Quick 15-minute appointment for CDL drivers and DOT-covered employees.",
+    turnaround: "15 minutes",
+    price: "$65",
+    priceId: "svc_dot_urine_price",
+    amountCents: 6500,
+    icon: Truck,
+  },
+  {
     id: "dot",
     title: "Employer / DOT Testing",
     description:
