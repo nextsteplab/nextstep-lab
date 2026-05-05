@@ -3,10 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
-import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const { error } = await supabase.functions.invoke("send-transactional-email", {
+      body: { templateName: "contact-message", templateData: form },
+    });
+    setLoading(false);
+    if (error) {
+      toast({ title: "Could not send", description: "Please call (806) 304-3424.", variant: "destructive" });
+      return;
+    }
+    setSubmitted(true);
+  };
 
   return (
     <Layout>
