@@ -26,7 +26,7 @@ export const services: Service[] = [
     title: "Rapid 5 Panel Drug Screen",
     description:
       "Standard five-substance urine drug test covering marijuana, cocaine, opiates, amphetamines, and PCP. Ideal for pre-employment and routine screening.",
-    turnaround: "24–48 hours",
+    turnaround: "15–20 minutes",
     price: "$55",
     priceId: "svc_5_panel_price",
     amountCents: 5500,
