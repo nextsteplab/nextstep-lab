@@ -37,7 +37,7 @@ export const services: Service[] = [
     title: "Rapid 10 Panel Drug Screen",
     description:
       "Comprehensive ten-substance urine drug test adding benzodiazepines, barbiturates, methadone, propoxyphene, and methaqualone to the standard 5-panel.",
-    turnaround: "24–48 hours",
+    turnaround: "15–20 minutes",
     price: "$65",
     priceId: "svc_10_panel_price",
     amountCents: 6500,
