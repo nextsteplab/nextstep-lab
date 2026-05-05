@@ -99,6 +99,17 @@ export const services: Service[] = [
     icon: ShieldCheck,
   },
   {
+    id: "non-dot-urine",
+    title: "Non-DOT - Urine Drug Screen",
+    description:
+      "Non-DOT urine drug screen for employers, individuals, legal, and personal use. Quick on-site collection with rapid results.",
+    turnaround: "15–20 minutes",
+    price: "$55",
+    priceId: "svc_non_dot_urine_price",
+    amountCents: 5500,
+    icon: FlaskConical,
+  },
+  {
     id: "dot-urine",
     title: "DOT - Urine Drug Screen",
     description:
