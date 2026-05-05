@@ -156,13 +156,16 @@ const Schedule = () => {
               priceId={selectedService.priceId}
               customerEmail={form.email}
               returnUrl={`${window.location.origin}/checkout/return?session_id={CHECKOUT_SESSION_ID}`}
-              metadata={{
-                customer_name: form.fullName,
-                customer_phone: form.phone,
-                service: selectedService.title,
+              booking={{
+                fullName: form.fullName,
+                phone: form.phone,
+                email: form.email,
+                serviceId: selectedService.id,
+                serviceLabel: selectedService.title,
                 location: form.location,
-                preferred_date: form.preferredDate,
-                preferred_time: form.preferredTime,
+                preferredDate: form.preferredDate,
+                preferredTime: form.preferredTime,
+                notes: form.notes || undefined,
               }}
             />
           )}
