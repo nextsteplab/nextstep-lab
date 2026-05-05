@@ -15,6 +15,8 @@ export interface Service {
   description: string;
   turnaround: string;
   price: string;
+  priceId?: string;
+  amountCents?: number;
   icon: React.ElementType;
 }
 
