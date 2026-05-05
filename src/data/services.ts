@@ -108,9 +108,18 @@ export const services: Service[] = [
     priceId: "svc_non_dot_urine_price",
     amountCents: 5500,
     icon: FlaskConical,
-  },
   {
-    id: "dot-urine",
+    id: "lab-based",
+    title: "Lab-Based Testing",
+    description:
+      "Send-out laboratory drug and alcohol testing with confirmation by GC/MS or LC/MS-MS. Ideal for legal, court-ordered, and high-accuracy compliance needs.",
+    turnaround: "2–3 business days",
+    price: "$95",
+    priceId: "svc_lab_based_price",
+    amountCents: 9500,
+    icon: Beaker,
+  },
+  
     title: "DOT - Urine Drug Screen",
     description:
       "DOT-regulated urine drug screen performed on-site with proper chain-of-custody documentation. Quick 15-minute appointment for CDL drivers and DOT-covered employees.",
