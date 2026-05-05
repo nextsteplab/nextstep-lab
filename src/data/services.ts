@@ -3,7 +3,6 @@ import {
   TestTubeDiagonal,
   Wind,
   Dna,
-  ShieldCheck,
   Truck,
   Beaker,
   HeartPulse,
@@ -44,6 +43,28 @@ export const services: Service[] = [
     icon: TestTubeDiagonal,
   },
   {
+    id: "dot-urine",
+    title: "DOT - Urine Drug Screen",
+    description:
+      "DOT-regulated urine drug screen performed on-site with proper chain-of-custody documentation. Quick 15-minute appointment for CDL drivers and DOT-covered employees.",
+    turnaround: "2–3 business days",
+    price: "$65",
+    priceId: "svc_dot_urine_price",
+    amountCents: 6500,
+    icon: Truck,
+  },
+  {
+    id: "non-dot-urine",
+    title: "Non-DOT - Urine Drug Screen",
+    description:
+      "Non-DOT urine drug screen for employers, individuals, legal, and personal use. Quick on-site collection with rapid results.",
+    turnaround: "2–3 business days",
+    price: "$65",
+    priceId: "svc_non_dot_urine_price",
+    amountCents: 6500,
+    icon: FlaskConical,
+  },
+  {
     id: "etg",
     title: "ETG Alcohol Test",
     description:
@@ -82,54 +103,10 @@ export const services: Service[] = [
     description:
       "Paternity, maternity, and family relationship DNA testing with legally admissible chain-of-custody documentation available. Confidential results.",
     turnaround: "5–7 business days",
-    price: "$299",
+    price: "$299–$500",
     priceId: "svc_dna_price",
     amountCents: 29900,
     icon: Dna,
-  },
-  {
-    id: "background",
-    title: "Background Checks",
-    description:
-      "Comprehensive criminal background screening for employers, landlords, and organizations. County, state, and national searches available.",
-    turnaround: "1–3 business days",
-    price: "$49",
-    priceId: "svc_background_price",
-    amountCents: 4900,
-    icon: ShieldCheck,
-  },
-  {
-    id: "non-dot-urine",
-    title: "Non-DOT - Urine Drug Screen",
-    description:
-      "Non-DOT urine drug screen for employers, individuals, legal, and personal use. Quick on-site collection with rapid results.",
-    turnaround: "2–3 business days",
-    price: "$65",
-    priceId: "svc_non_dot_urine_price",
-    amountCents: 6500,
-    icon: FlaskConical,
-  },
-  {
-    id: "lab-based",
-    title: "Lab-Based Testing",
-    description:
-      "Send-out laboratory drug and alcohol testing with confirmation by GC/MS or LC/MS-MS. Ideal for legal, court-ordered, and high-accuracy compliance needs.",
-    turnaround: "2–3 business days",
-    price: "$95",
-    priceId: "svc_lab_based_price",
-    amountCents: 9500,
-    icon: Beaker,
-  },
-  {
-    id: "dot-urine",
-    title: "DOT - Urine Drug Screen",
-    description:
-      "DOT-regulated urine drug screen performed on-site with proper chain-of-custody documentation. Quick 15-minute appointment for CDL drivers and DOT-covered employees.",
-    turnaround: "15 minutes",
-    price: "$65",
-    priceId: "svc_dot_urine_price",
-    amountCents: 6500,
-    icon: Truck,
   },
   {
     id: "dot",
