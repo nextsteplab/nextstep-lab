@@ -36,6 +36,15 @@ const Schedule = () => {
     e.preventDefault();
     setLoading(true);
     const { error } = await sendBookingEmail();
+    // Also persist a pending pay-at-visit booking record
+    await supabase.from("bookings").insert({
+      full_name: form.fullName, phone: form.phone, email: form.email,
+      service_id: form.service, service_label: selectedService?.title || form.service,
+      location: form.location, preferred_date: form.preferredDate,
+      preferred_time: form.preferredTime, notes: form.notes || null,
+      payment_mode: "pay_at_visit", payment_status: "pending",
+      amount_cents: selectedService?.amountCents ?? null,
+    });
     setLoading(false);
     if (error) {
       toast({ title: "Submission failed", description: "Please call us at (806) 304-3424.", variant: "destructive" });
@@ -53,9 +62,8 @@ const Schedule = () => {
       toast({ title: "This service is not available for online payment", variant: "destructive" });
       return;
     }
-    setLoading(true);
+    // Send a "pending payment" notification to admin so you know someone started checkout
     await sendBookingEmail();
-    setLoading(false);
     setShowCheckout(true);
   };
 
@@ -148,13 +156,16 @@ const Schedule = () => {
               priceId={selectedService.priceId}
               customerEmail={form.email}
               returnUrl={`${window.location.origin}/checkout/return?session_id={CHECKOUT_SESSION_ID}`}
-              metadata={{
-                customer_name: form.fullName,
-                customer_phone: form.phone,
-                service: selectedService.title,
+              booking={{
+                fullName: form.fullName,
+                phone: form.phone,
+                email: form.email,
+                serviceId: selectedService.id,
+                serviceLabel: selectedService.title,
                 location: form.location,
-                preferred_date: form.preferredDate,
-                preferred_time: form.preferredTime,
+                preferredDate: form.preferredDate,
+                preferredTime: form.preferredTime,
+                notes: form.notes || undefined,
               }}
             />
           )}
