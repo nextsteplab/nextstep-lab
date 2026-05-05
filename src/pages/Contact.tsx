@@ -83,19 +83,13 @@ const Contact = () => {
                 <p className="text-muted-foreground">We'll get back to you shortly.</p>
               </div> :
 
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
-              className="space-y-4">
-              
-                <Input required placeholder="Your Name" className="focus:border-gold focus:ring-gold" />
-                <Input required type="email" placeholder="Email Address" className="focus:border-gold focus:ring-gold" />
-                <Input type="tel" placeholder="Phone Number (optional)" className="focus:border-gold focus:ring-gold" />
-                <Textarea required placeholder="How can we help?" rows={5} className="focus:border-gold focus:ring-gold" />
-                <Button type="submit" variant="cta" className="w-full">
-                  Send Message
+            <form onSubmit={handleSubmit} className="space-y-4">
+                <Input required value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="Your Name" className="focus:border-gold focus:ring-gold" />
+                <Input required type="email" value={form.email} onChange={(e) => update("email", e.target.value)} placeholder="Email Address" className="focus:border-gold focus:ring-gold" />
+                <Input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} placeholder="Phone Number (optional)" className="focus:border-gold focus:ring-gold" />
+                <Textarea required value={form.message} onChange={(e) => update("message", e.target.value)} placeholder="How can we help?" rows={5} className="focus:border-gold focus:ring-gold" />
+                <Button type="submit" variant="cta" className="w-full" disabled={loading}>
+                  {loading ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Sending…</> : "Send Message"}
                 </Button>
               </form>
             }
