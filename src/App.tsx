@@ -10,6 +10,7 @@ import Schedule from "./pages/Schedule";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Unsubscribe from "./pages/Unsubscribe";
+import CheckoutReturn from "./pages/CheckoutReturn";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/unsubscribe" element={<Unsubscribe />} />
+          <Route path="/checkout/return" element={<CheckoutReturn />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
