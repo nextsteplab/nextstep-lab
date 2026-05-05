@@ -20,7 +20,7 @@ const Email = (p: Props) => (
     <Head />
     <Body style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f6f6f6', padding: '20px' }}>
       <Container style={{ backgroundColor: '#ffffff', padding: '24px', borderRadius: '8px', maxWidth: '600px' }}>
-        <Heading style={{ color: '#000', borderBottom: '3px solid #ec4899', paddingBottom: '8px' }}>
+        <Heading style={{ color: '#000', borderBottom: '3px solid #2563eb', paddingBottom: '8px' }}>
           New Appointment Request
         </Heading>
         <Text>A new booking request has been submitted on nextsteplab.org.</Text>
